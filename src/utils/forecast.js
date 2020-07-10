@@ -16,7 +16,9 @@ const forecast = (latitude, longitude, callback) => {
           body.current.temperature +
           " degress out. It feels like " +
           body.current.feelslike +
-          " degree"
+          " degree and the clouds cover " +
+          body.current.cloudcover +
+          "%."
       );
     }
   });
