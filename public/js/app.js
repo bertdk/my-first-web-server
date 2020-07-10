@@ -8,7 +8,7 @@ weatherFrom.addEventListener("submit", (e) => {
   const address = search.value;
   messageOne.textContent = "Loading...";
   messageTwo.textContent = "";
-  fetch(`http://localhost:3000/weather?address=${address}`).then((resposne) => {
+  fetch(`/weather?address=${address}`).then((resposne) => {
     resposne.json().then((data) => {
       if (data.error) {
         messageOne.textContent = data.error;
